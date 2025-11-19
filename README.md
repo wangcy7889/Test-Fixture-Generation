@@ -12,14 +12,15 @@ Fixture-TCG is open for research purposes, enabling thorough evaluation of LLMs'
 
 The experimental evaluation is conducted on FixtureEval, a benchmark specifically designed to address the lack of fixture-aware metrics in existing datasets. As shown in the directory structure, the benchmark comprises three distinct components:
 
-- **FixtureEval-Github** (`dataset/github`): Contains real-world Python functions collected from popular repositories to evaluate performance in realistic scenarios.
-- **FixtureEval-Leakage-Free** (`dataset/leakage-free`): Consists of functions meticulously constructed by experts. This subset serves as a rigorous safeguard against data leakage, ensuring that LLMs cannot rely on memorized training data.
-- **FixtureEval-Java** (`dataset/java`): A Java extension of the benchmark used to evaluate Fixture-TCG's cross-language generalization capability.
+- **FixtureEval<sub>Github</sub>** (`dataset/github`): Contains real-world Python functions collected from popular repositories to evaluate performance in realistic scenarios.
+- **FixtureEval<sub>Leakage-Free</sub>**  (`dataset/leakage-free`): Consists of functions meticulously constructed by experts. This subset serves as a rigorous safeguard against data leakage, ensuring that LLMs cannot rely on memorized training data.
+- **FixtureEval<sub>Java</sub>** (`dataset/java`): A Java extension of the benchmark used to evaluate Fixture-TCG's cross-language generalization capability.
 
 ## Environmental Requirements
 
-- Python 3.12+
-- To run Pynguin
+- Python 3.12+ for Fixture-TCG
+- To run Pynguin, we use Python 3.10.18, while keeping all other settings unchanged.
+- For CoverUp, we adhered to the default settings. See https://github.com/plasma-umass/coverup-eval
 
 ## Getting Started
 
